@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Hard Bakery | Конструктор торта</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="wrapper-header clearfix">
+			<img src="img/logo.png">
+			<nav class="menu-navigation clearfix" id="menu">
+			<ul class="menu">
+				<li class="menu-item"><a href="#contact">КОНТАКТЫ</a></li>
+				<li class="menu-item"><a href="#news">НОВОСТИ</a></li>
+				<li class="menu-item"><a href="#search-items">СОЗДАТЬ ТОРТ</a></li>
+				<li class="menu-item"><a href="#">ВХОД</a></li>
+				<li class="menu-item"><a href="#"><img src="img/cart.png"></a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<div class="body-items">
+		<div class="wrapper-change">
+			<div class="change-block">
+				<img src="img/1.png">
+				<h3>Торт "Rainbow"</h3>
+				<p>Веселый, радужный торт,подойдет для вечеринки или<br>
+					Дня рождения.
+				</p>
+			</div>
+			<div class="change-block">
+				<div class="row">
+					<h3>Выберите размер</h3>
+					<div class="cake-info">
+						<div class="button-size">10 чел.</div>
+						<span>500 rub</span>
+						<p>На сколько человек вам нуже торт? Расчитайте сколько будет людей на вашем празднике
+							<br>или простом чаепитии. Каждый получит свой кусочек торта, и возможно кому-то
+							<br>достанется добавка :)
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="change-block">
+				<div class="row">
+					<h3>Хотите текст на торте?(+ 100 rub)</h3>
+					<div class="cake-info">
+						<input type="radio" name="change-radio" value="yes">
+						<input type="radio" name="change-radio" value="no">
+						<input type="text" name="text-on-cake">
+						<span>0/40 символов</span>
+						<p>Текст печатается на торте или помещается на изображение на торте.
+							<br>Если вы хотите и изображение, и надпись, хорошо подумайте над длинною надписи.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="change-block">
+				<div class="row">
+					<h3>Как оформить торт?</h3>
+					<div class="cake-info">
+						<div class="select-decor">
+							<select class="select">
+								<option>Стандартное оформление</option>
+								<option>На день рождение</option>
+								<option>На свадьбу</option>
+								<option>Детский для мальчика</option>
+								<option>Детский для девочки</option>
+							</select>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="change-block">
+				<div class="row">
+					<div class="cake-info">
+						<div class="delivery-method">
+							<h3>Выберите способ доставки</h3>
+							<div class="home-delivery">
+								<input type="date" name="calendar">
+							</div>
+							<div class="pickup">
+								<input type="date" name="calendar">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div id="cd-shadow-layer"></div>
+
+<div id="cd-cart">
+    <h2>Cart</h2>
+    <ul class="cd-cart-items">
+        <li>
+            <!-- ... -->
+        </li>
+
+        <li>
+            <!-- ... -->
+        </li>
+    </ul> <!-- cd-cart-items -->
+
+    <div class="cd-cart-total">
+        <p>Total <span>$39.96</span></p>
+    </div> <!-- cd-cart-total -->
+
+    <a href="#0" class="checkout-btn">Checkout</a>
+
+    <p class="cd-go-to-cart"><a href="#0">Go to cart page</a></p>
+</div> <!-- cd-cart -->
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p class="modal-description">Введите свой логин и пароль</p>
+		<form class="login-form" method="post">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+			</p>
+			<p>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-user" id="user-password" type="password" name="password" placeholder="Пароль">
+			</p>
+			<p class="login-help">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkbox-indicator"></span>
+					запомните меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль</a>
+			</p>
+			<button class="button-login" type="submit">Войти</button>
+		</form>
+		<button class="modal modal-close" type="button"> </button>
+	</section>
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться?</h2>
+		<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6705.439873151265!2d41.947798305590744!3d45.03933307804423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900a307785dc1%3A0x86c70423ca2adee2!2z0YPQuy4g0JvRjNCy0LAg0KLQvtC70YHRgtC-0LPQviwgMTksINCh0YLQsNCy0YDQvtC_0L7Qu9GMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCAzNTUwMDM!5e0!3m2!1sru!2sru!4v1532680395612" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+
+		<div id="back-top">
+		<a href="#" onclick="return up()">ВВЕРХ</a>  
+		</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+</script>
+
+<script type="text/javascript">
+ function up() {  
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+if(top > 0) {  
+  window.scrollBy(0,((top+100)/-10));  
+  t = setTimeout('up()',20);  
+} else clearTimeout(t);  
+return false;  
+} 
+</script>
+</body>
+</html>

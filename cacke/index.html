@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Hard Bakery</title>
+</head>
+<body>
+<header class="main-header">
+	<div class="wrapper-header">
+		<img src="img/logo.png">
+		<nav class="menu-navigation clearfix" id="menu">
+			<ul class="menu">
+				<li class="menu-item"><a href="#contact">КОНТАКТЫ</a></li>
+				<li class="menu-item"><a href="#news">НОВОСТИ</a></li>
+				<li class="menu-item"><a href="#search-items">СОЗДАТЬ ТОРТ</a></li>
+				<li class="menu-item"><a id="login" href="#">ВХОД</a></li>
+			</ul>
+		</nav>
+		<section class="about-the-bakery clearfix">
+			<ul class="bakery">
+				<li class="bakery-item">
+					<h3>КТО МЫ?</h3>
+					<p>
+						Hard bakery - это местная качественная пекарня,секреты выпечки которой, уходят глубоко в века.
+					</p>
+				</li>
+				<li class="bakery-item">
+					<h3>ПОЧЕМУ МЫ?</h3>
+				<p>
+					Наша пекарня,поставляет только лучшую кондитерскую продукцию, а именно: торты!!!
+				</p>
+				</li>
+				<li class="bakery-item">
+					<a href="#" id="map" onclick="openbox('box2'); return false" class="click">
+						ГДЕ МЫ?
+						<img src="img/click.png" width="200">
+					</a>
+				</li>
+			</ul>
+		</section>
+	</div>
+</header>
+<div class="body-items">
+	<div class="wrapper-body">
+	<section class="news" id="news">
+		<h3>НОВОСТИ</h3>
+			<ul class="news-list">
+				<li class="news-item"><p> Наконец-то наш сайт сверстали! УРА! УРА! УРА!</p> <time datetime="2018-07-24">24 июля</time></li>
+				<li class="news-item"><p> Мы открылись, приходите в гости! </p> <time datetime="2018-07-24">24 июля</time></li>
+			</ul>
+			<a href="#">ВСЕ НОВОСТИ</a>
+		</section>
+		<div class="shop-cake">
+			
+			<h3>НАШИ ТОРТЫ</h3>
+			<img src="img/cake.png" width="60">
+			<div class="filter">
+				<select class="filter-item">
+					<option class="item">Выберите количество людей</option>
+					<option class="item">Все</option>
+					<option class="item">5-10</option>
+					<option class="item">15-20</option>
+					<option class="item">25-30</option>
+				</select>
+				<select class="filter-item">
+					<option class="item">Выберите способ доставки</option>
+					<option class="item">Все</option>
+					<option class="item">Самовывоз</option>
+					<option class="item">Доставка на дом</option>
+				</select>
+				<select class="filter-item">
+					<option class="item">Без аллергенов</option>
+					<option class="item">Все</option>
+					<option class="item">Без глютена</option>
+					<option class="item">Без лактозы</option>
+					<option class="item">Без яиц</option>
+				</select>
+			</div>
+		</div>
+	<div class="search-items" id="search-items">
+		<div class="content-box">
+			<div class="items">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+				<img src="img/1.png"></div>
+			<span class="item-name">Торт "Rainbow"</span>
+			<span class="item-name-right">от 500 руб.</span>
+		</div>
+		<div class="content-box">
+			<div class="items">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+				<img src="img/2.png"></div>
+			<span class="item-name">Cвадебный</span>
+			<span class="item-name-right">от 2000 руб.</span>
+		</div>
+		<div class="content-box">
+			<div class="items">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+				<img src="img/3.png"></div>
+			<span class="item-name">Клубничный</span>
+			<span class="item-name-right">от 800 руб.</span>
+		</div>
+		<div class="content-box">
+			<div class="items">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+				<img src="img/4.png"></div>
+			<span class="item-name">Кислотный шок</span>
+			<span class="item-name-right">от 1000 руб.</span>
+		</div>
+		<div class="content-box">
+			<div class="items">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+				<img src="img/5.png"></div>
+			<span class="item-name">Звездочет</span>
+			<span class="item-name-right">от 700 руб.</span>
+		</div>
+		<div class="content-box">	
+			<div class="items">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+				<img src="img/6.png">
+			</div>
+			<span class="item-name">Снежинка.</span>
+			<span class="item-name-right">от 500 руб.</span>
+		</div>
+		<div class="content-box">	
+			<div class="items">
+				<img src="img/7.png">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+			</div>
+			<span class="item-name">Космос</span>
+			<span class="item-name-right">от 1200 руб.</span>
+		</div>
+		<div class="content-box">
+			<div class="items">
+				<div class="background"><a href="#" class="button">Заказать</a></div>
+				<img src="img/8.png"></div>
+			<span class="item-name">Колизей</span>
+			<span class="item-name-right">от 1000 руб.</span>
+		</div>
+
+		</div>
+		</div>
+	</div>
+</div>
+<footer class="main-footer">
+	<div class="footer-wrapper clearfix">
+		<div class="logo">
+		<img src="img/logo.png">
+		</div>
+		<div class="logo-company">
+        <img src="img/logos.png" width="200" >
+    	</div>
+		<section class="contacts" id="contact">
+            <h2>Контактная информация:</h2>
+            <p class="contacts-info">
+                <br> Адрес: г. Ставрополь, ул. Льва Толстого, д. 19
+                <br> Телефон: +7 (812) 6236-02-66
+            </p>
+            <p class="contacts-info">
+                Время работы:
+                <br> пн—пт: с 10:00 до 22:00
+                <br> сб—вс: с 10:00 до 19:00
+            </p>
+            <a class="button" href="map.html">НАЙТИ НАС</a>
+        </section>
+        <section class="social">
+        <p class="connection">Свяжись со мной:</p>
+        	<ul class="public-list">
+        		<li class="public-item"><a href="#"><img src="img/vk.png" width="60" height="60"></a></li>
+        		<li public-item><a href="#"><img src="img/instagram.png" width="60" height="60"></a></li>
+        		<li public-item><a href="#"><img src="img/facebook.png" width="60" height="60"></a></li>
+        	</ul>
+        </section>
+	</div>
+</footer>
+	<section class="modal modal-login" id="box1">
+		<h2>Личный кабинет</h2>
+		<p class="modal-description">Введите свой логин и пароль</p>
+		<form class="login-form" method="post">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+			</p>
+			<p>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-user" id="user-password" type="password" name="password" placeholder="Пароль">
+			</p>
+			<p class="login-help">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkbox-indicator"></span>
+					запомнить меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль</a>
+			</p>
+			<button class="button-login" type="submit">Войти</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+	<section class="modal modal-map" id="box2">
+		<h2 class="visually-hidden">Как до нас добраться?</h2>
+		<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6705.439873151265!2d41.947798305590744!3d45.03933307804423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f900a307785dc1%3A0x86c70423ca2adee2!2z0YPQuy4g0JvRjNCy0LAg0KLQvtC70YHRgtC-0LPQviwgMTksINCh0YLQsNCy0YDQvtC_0L7Qu9GMLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCAzNTUwMDM!5e0!3m2!1sru!2sru!4v1532680395612" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+
+		<div id="back-top">
+		<a href="#" onclick="return up()">ВВЕРХ</a>  
+		</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top();
+        $('body,html').animate({scrollTop: top}, 200);
+    });
+});
+</script>
+
+<script type="text/javascript">
+ function up() {  
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+if(top > 0) {  
+  window.scrollBy(0,((top+100)/-10));  
+  t = setTimeout('up()',20);  
+} else clearTimeout(t);  
+return false;  
+} 
+</script>
+<script type="text/javascript">
+function openbox(id)
+{
+    display = document.getElementById(id).style.display;
+    if(display=='none'){
+       document.getElementById(id).style.display='block';
+    }else{
+       document.getElementById(id).style.display='none';
+    }
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(document).on('click', '.modal-close', function(){
+    $(this).parents('.modal').hide();
+  });
+   $(document).on('click', '#login', function(){
+    $('.modal-login').show();
+  });
+    $(document).on('click', '#map', function(){
+    $('.modal-map').show();
+  });
+});
+</script>
+</body>
+</html>
